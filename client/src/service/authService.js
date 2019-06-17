@@ -9,7 +9,6 @@ export default class AuthService{
     }
 
     Msg = () => {
-        console.log(process.env.REACT_APP_URL)
         return this.service.get("/")
         .then(response => response.data)
     }
